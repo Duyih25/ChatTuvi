@@ -1,0 +1,7 @@
+pypdf==6.1.1
+langchain-core
+langchain
+langchain-google-genai
+elasticsearch==8.19.1
+langgraph==0.6.0
+tqdm
