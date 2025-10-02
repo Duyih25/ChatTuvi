@@ -58,10 +58,8 @@ while True:
     # Thêm message mới vào state
     state["messages"].append(HumanMessage(content=string_input))
 
-    # Gọi app với state hiện tại
     state = app.invoke(state)
 
-    # Log lại vào Elasticsearch
     log_query(user_id, session_id, string_input)
 
     # Lấy câu trả lời cuối cùng
